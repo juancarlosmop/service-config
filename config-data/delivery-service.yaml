@@ -19,4 +19,11 @@ resilience4j.circuitbreaker:
             minimumNumberOfCalls: 4
             waitDurationInOpenState: 5s
             failureRateThreshold: 50
-            eventConsumerBufferSize: 10   
+            eventConsumerBufferSize: 10
+resilience4j.retry:
+    instances:
+        userCB:
+            maxAttempts: 3
+            waitDuration: 10s
+            enableExponentialBackoff: true
+            exponentialBackoffMultiplier: 2               
