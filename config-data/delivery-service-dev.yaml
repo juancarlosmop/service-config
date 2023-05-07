@@ -37,7 +37,16 @@ resilience4j.circuitbreaker:
             minimumNumberOfCalls: 4
             waitDurationInOpenState: 5s
             failureRateThreshold: 50
-            eventConsumerBufferSize: 10        
+            eventConsumerBufferSize: 10 
+spring:
+ h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+ jpa:
+    hibernate:
+      ddl-auto: update                 
 
 resilience4j.retry:
     instances:
