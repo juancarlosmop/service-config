@@ -15,5 +15,6 @@ spring:
       settings:
         web-allow-others: true
  jpa:
+    defer-datasource-initialization: 'true '
     hibernate:
       ddl-auto: update            
