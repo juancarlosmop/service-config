@@ -16,7 +16,7 @@ spring:
         web-allow-others: true
  jpa:
     hibernate:
-      ddl-auto: updat      
+      ddl-auto: update    
 
 
 resilience4j.circuitbreaker:
