@@ -7,15 +7,6 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
     instance:
-      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-spring:
- h2:
-    console:
-      enabled: true
-      settings:
-        web-allow-others: true
- jpa:
-    hibernate:
-      ddl-auto: update      
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}     
 
         
