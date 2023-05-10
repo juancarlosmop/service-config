@@ -18,7 +18,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
+  redis:
+    host: localhost
+    port: 6379
+    password: myPassword
 #-------------------------------------
 # logger configuration
 #-------------------------------------
