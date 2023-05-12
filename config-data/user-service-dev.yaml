@@ -20,8 +20,19 @@ spring:
       ddl-auto: update
   redis:
     host: localhost
-    port: 6379    
+    port: 6379
+#-------------------------------------
+# Spring configuration
+#-------------------------------------
 
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+    paths-to-match: /user/**
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
 #-------------------------------------
 # logger configuration
 #-------------------------------------
