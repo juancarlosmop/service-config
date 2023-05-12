@@ -28,7 +28,7 @@ spring:
 springdoc:
   api-docs:
     enabled: true
-    path: /api-docs
+    path: /api-docs/**
     paths-to-match: /user/**
   swagger-ui:
     enabled: true
