@@ -22,19 +22,6 @@ spring:
     host: localhost
     port: 6379
 #-------------------------------------
-# Spring configuration
-#-------------------------------------
-
-springdoc:
-  api-docs:
-    enabled: true
-    path: /api-docs/**
-    paths-to-match: /user/**
-    packagesToScan: com.example.users.controller
-  swagger-ui:
-    enabled: true
-    path: /swagger-ui.html
-#-------------------------------------
 # logger configuration
 #-------------------------------------
 logging:
