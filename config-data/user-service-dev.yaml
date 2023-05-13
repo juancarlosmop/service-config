@@ -22,6 +22,12 @@ spring:
     host: localhost
     port: 6379
 #-------------------------------------
+# Spring configuration
+#-------------------------------------
+springdoc:
+  packagesToScan: com.example.users.controller
+
+#-------------------------------------
 # logger configuration
 #-------------------------------------
 logging:
